@@ -73,8 +73,8 @@ export default {
   data () {
     return {
       user: {
-        mobile: '',
-        code: ''
+        mobile: '17090086870',
+        code: '246810'
       },
       formRules: {
         mobile: [
@@ -106,6 +106,9 @@ export default {
 
         // 将后端返回的用户登录状态放到Vuex容器中
         this.$store.commit('setUser', data.data)
+
+        // 登录成功，跳转回原来页面
+        this.$router.back() // 先用这种方式，但是它不太好
       } catch (err) {
         console.log(err)
         Toast.fail('登录失败，手机号或验证码错误')
