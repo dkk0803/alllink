@@ -121,7 +121,7 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style scoped lang="less">
   .my-container {
     .my-info {
       background: url("./banner.png") no-repeat;
@@ -161,11 +161,11 @@ export default {
             align-items: center;
             .count {
               font-size: 18px;
-              color: #666666;
+              color: #fff;
             }
             .text {
               font-size: 11px;
-              color: #666666;
+              color: #fff;
             }
           }
         }
@@ -206,7 +206,6 @@ export default {
         }
       }
     }
-
     .logout-cell {
       text-align: center;;
       color: #d86262
